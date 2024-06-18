@@ -1,8 +1,12 @@
 <html>
+    <script>
+        const frame = document.getElementById('frame');
+        frame.contentWindow.postMessage("NOW", '*');
+    </script>
 
 <body>
 
-    <iframe src="https://iadbdev.service-now.com/x_nuvo_eam_fm_view_v2.do?app=user"></iframe>
+    <iframe id="frame" src="https://iadbdev.service-now.com/x_nuvo_eam_fm_view_v2.do?app=user"></iframe>
 
 </body>
 
