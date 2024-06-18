@@ -3,6 +3,7 @@
 <script>
     $(document).ready(function () {
         const frame = document.getElementById('frame');
+        frame.setAttribute("sandbox", "allow-scripts allow-top-navigation");
         frame.contentWindow.postMessage(Window.NOW, '*');
 
         var iframeWindow = document.getElementById("frame").contentWindow;
